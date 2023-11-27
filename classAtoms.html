@@ -187,8 +187,57 @@ std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="classAtom.html">Atom</a> with the specified index. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="classAtom.html">Atom</a> with the specified index.</dd></dl>
 
+<details><p><summary><b>Python Example</b></summary>
+
+
+</p><div class="fragment"><div class="line"><span class="keyword">from</span> netchem <span class="keyword">import</span> Network, data_files</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">1000 frame Molecular Dynamics trajectory of a pyrophosphatase system.</span></div>
+<div class="line"><span class="stringliteral">The dcd is a binary coordinate file, and the pdb is a single frame </span></div>
+<div class="line"><span class="stringliteral">topology file.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">dcd, pdb = data_files(<span class="stringliteral">&#39;pyro&#39;</span>)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Construct a network using the entire trajectory.</span></div>
+<div class="line"><span class="stringliteral">If you want to use only a subset of the trajectory, you can specify</span></div>
+<div class="line"><span class="stringliteral">the first frame, last frame, and stride.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">network = <a class="code hl_class" href="classNetwork.html">Network</a>()</div>
+<div class="line">network.init(</div>
+<div class="line">    trajectoryFile=str(dcd), <span class="comment"># Convert the dcd Path object to a string</span></div>
+<div class="line">    topologyFile=str(pdb), <span class="comment"># Convert the pdb Path object to a string</span></div>
+<div class="line">    firstFrame=0,</div>
+<div class="line">    lastFrame=999,</div>
+<div class="line">    stride=1</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Get the Network&#39;s Atoms class object using the Network atoms method.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">atoms = network.atoms()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">The Atoms class is a container like class for Atom objects.</span></div>
+<div class="line"><span class="stringliteral">The reason for using a custom container class to store Atom objects</span></div>
+<div class="line"><span class="stringliteral">instead of using an Atom vector is to have more control over memory</span></div>
+<div class="line"><span class="stringliteral">management.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">The Atoms at method can be used to get the Atom object with an </span></div>
+<div class="line"><span class="stringliteral">atom index equal to the provided index.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">atom = atoms.at(0)</div>
+<div class="line">print(atom)</div>
+<div class="ttc" id="aclassNetwork_html"><div class="ttname"><a href="classNetwork.html">Network</a></div><div class="ttdef"><b>Definition</b> network.h:12</div></div>
+</div><!-- fragment -->
+</details>
+
+ 
 </div>
 </div>
 <a id="af9f5ca488ebdfbbf0c68fc82090d13aa" name="af9f5ca488ebdfbbf0c68fc82090d13aa"></a>
@@ -208,8 +257,54 @@ std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"
 
 <p>Get a reference to the vector of <a class="el" href="classAtoms.html">Atoms</a>. </p>
 <p>Returns a reference to the vector of <a class="el" href="classAtoms.html">Atoms</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the vector of <a class="el" href="classAtoms.html">Atoms</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the vector of <a class="el" href="classAtoms.html">Atoms</a>.</dd></dl>
 
+<details><p><summary><b>Python Example</b></summary>
+
+
+</p><div class="fragment"><div class="line"><span class="keyword">from</span> netchem <span class="keyword">import</span> Network, data_files</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">1000 frame Molecular Dynamics trajectory of a pyrophosphatase system.</span></div>
+<div class="line"><span class="stringliteral">The dcd is a binary coordinate file, and the pdb is a single frame </span></div>
+<div class="line"><span class="stringliteral">topology file.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">dcd, pdb = data_files(<span class="stringliteral">&#39;pyro&#39;</span>)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Construct a network using the entire trajectory.</span></div>
+<div class="line"><span class="stringliteral">If you want to use only a subset of the trajectory, you can specify</span></div>
+<div class="line"><span class="stringliteral">the first frame, last frame, and stride.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">network = <a class="code hl_class" href="classNetwork.html">Network</a>()</div>
+<div class="line">network.init(</div>
+<div class="line">    trajectoryFile=str(dcd), <span class="comment"># Convert the dcd Path object to a string</span></div>
+<div class="line">    topologyFile=str(pdb), <span class="comment"># Convert the pdb Path object to a string</span></div>
+<div class="line">    firstFrame=0,</div>
+<div class="line">    lastFrame=999,</div>
+<div class="line">    stride=1</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Get the Network&#39;s Atoms class object using the Network atoms method.</span></div>
+<div class="line"><span class="stringliteral">The Atoms class is a container like class for Atom objects.</span></div>
+<div class="line"><span class="stringliteral">The reason for using a custom container class to store Atom objects</span></div>
+<div class="line"><span class="stringliteral">instead of using an Atom vector is to have more control over memory</span></div>
+<div class="line"><span class="stringliteral">management.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">atoms = network.atoms()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Use the Atoms atoms method to return a vector of Atom objects.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">atom_vector = atoms.atoms()</div>
+<div class="line"><span class="keywordflow">for</span> atom <span class="keywordflow">in</span> atom_vector:</div>
+<div class="line">    print(atom)</div>
+<div class="line">    print(<span class="stringliteral">&quot;-&quot;</span>*80)</div>
+</div><!-- fragment -->
+</details>
+
+ 
 </div>
 </div>
 <a id="a380ae242907228f4c88f5f7777158e8a" name="a380ae242907228f4c88f5f7777158e8a"></a>
@@ -229,8 +324,53 @@ std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"
 
 <p>Get the number of <a class="el" href="classAtoms.html">Atoms</a> in the collection. </p>
 <p>Returns the number of <a class="el" href="classAtoms.html">Atoms</a> in the collection.</p>
-<dl class="section return"><dt>Returns</dt><dd>The number of <a class="el" href="classAtoms.html">Atoms</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of <a class="el" href="classAtoms.html">Atoms</a>.</dd></dl>
 
+<details><p><summary><b>Python Example</b></summary>
+
+
+</p><div class="fragment"><div class="line"><span class="keyword">from</span> netchem <span class="keyword">import</span> Network, data_files</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">1000 frame Molecular Dynamics trajectory of a pyrophosphatase system.</span></div>
+<div class="line"><span class="stringliteral">The dcd is a binary coordinate file, and the pdb is a single frame </span></div>
+<div class="line"><span class="stringliteral">topology file.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">dcd, pdb = data_files(<span class="stringliteral">&#39;pyro&#39;</span>)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Construct a network using the entire trajectory.</span></div>
+<div class="line"><span class="stringliteral">If you want to use only a subset of the trajectory, you can specify</span></div>
+<div class="line"><span class="stringliteral">the first frame, last frame, and stride.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">network = <a class="code hl_class" href="classNetwork.html">Network</a>()</div>
+<div class="line">network.init(</div>
+<div class="line">    trajectoryFile=str(dcd), <span class="comment"># Convert the dcd Path object to a string</span></div>
+<div class="line">    topologyFile=str(pdb), <span class="comment"># Convert the pdb Path object to a string</span></div>
+<div class="line">    firstFrame=0,</div>
+<div class="line">    lastFrame=999,</div>
+<div class="line">    stride=1</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Get the Network&#39;s Atoms class object using the Network atoms method.</span></div>
+<div class="line"><span class="stringliteral">The Atoms class is a container like class for Atom objects.</span></div>
+<div class="line"><span class="stringliteral">The reason for using a custom container class to store Atom objects</span></div>
+<div class="line"><span class="stringliteral">instead of using an Atom vector is to have more control over memory</span></div>
+<div class="line"><span class="stringliteral">management.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">atoms = network.atoms()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Use the Atoms numAtoms method to get the number of atoms in the Atoms</span></div>
+<div class="line"><span class="stringliteral">object.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">num_atoms = atoms.numAtoms()</div>
+<div class="line">print(num_atoms)</div>
+</div><!-- fragment -->
+</details>
+
+ 
 </div>
 </div>
 <a id="ad8e79d107094e3cbe88c045e99b8657c" name="ad8e79d107094e3cbe88c045e99b8657c"></a>

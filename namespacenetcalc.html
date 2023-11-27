@@ -105,8 +105,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a5af0a49a6a96305d023b16dfe72e1fb8" id="r_a5af0a49a6a96305d023b16dfe72e1fb8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenetcalc.html#a5af0a49a6a96305d023b16dfe72e1fb8">generalizedCorrelation</a> (<a class="el" href="classCuArray.html">CuArray</a>&lt; float &gt; *X, <a class="el" href="classCuArray.html">CuArray</a>&lt; float &gt; *R, <a class="el" href="classCuArray.html">CuArray</a>&lt; int &gt; *ab, int k, int n, int xd, int d, int platform, int checkpointFrequency, std::string checkpointFileName)</td></tr>
 <tr class="memdesc:a5af0a49a6a96305d023b16dfe72e1fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the generalized correlation between all pairs of random variables listed in 'ab'.  <br /></td></tr>
 <tr class="separator:a5af0a49a6a96305d023b16dfe72e1fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5003e2217b6bcaabe332283c884fcd3a" id="r_a5003e2217b6bcaabe332283c884fcd3a"><td class="memItemLeft" align="right" valign="top"><a id="a5003e2217b6bcaabe332283c884fcd3a" name="a5003e2217b6bcaabe332283c884fcd3a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>generalizedCorrelation</b> (<a class="el" href="classCuArray.html">CuArray</a>&lt; float &gt; *X, <a class="el" href="classCuArray.html">CuArray</a>&lt; float &gt; *R, <a class="el" href="classCuArray.html">CuArray</a>&lt; int &gt; *ab, int k, int n, int xd, int d, int platform)</td></tr>
+<tr class="memitem:a5003e2217b6bcaabe332283c884fcd3a" id="r_a5003e2217b6bcaabe332283c884fcd3a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenetcalc.html#a5003e2217b6bcaabe332283c884fcd3a">generalizedCorrelation</a> (<a class="el" href="classCuArray.html">CuArray</a>&lt; float &gt; *X, <a class="el" href="classCuArray.html">CuArray</a>&lt; float &gt; *R, <a class="el" href="classCuArray.html">CuArray</a>&lt; int &gt; *ab, int k, int n, int xd, int d, int platform)</td></tr>
+<tr class="memdesc:a5003e2217b6bcaabe332283c884fcd3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the generalized correlation between all pairs of random variables listed in 'ab'.  <br /></td></tr>
 <tr class="separator:a5003e2217b6bcaabe332283c884fcd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a027a0bbe935ec23e5e506ca908a18c6d" id="r_a027a0bbe935ec23e5e506ca908a18c6d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenetcalc.html#a027a0bbe935ec23e5e506ca908a18c6d">generalizedCorrelationGpu</a> (<a class="el" href="classCuArray.html">CuArray</a>&lt; float &gt; *Xa, <a class="el" href="classCuArray.html">CuArray</a>&lt; float &gt; *Xb, int k, int n, int xd, int d)</td></tr>
 <tr class="memdesc:a027a0bbe935ec23e5e506ca908a18c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the generalized correlation between two random variables Xa and Xb on the GPU.  <br /></td></tr>
@@ -118,8 +118,184 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>generalizedCorrelation
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The netcalc namespace. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a5003e2217b6bcaabe332283c884fcd3a" name="a5003e2217b6bcaabe332283c884fcd3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5003e2217b6bcaabe332283c884fcd3a">&#9670;&#160;</a></span>generalizedCorrelation() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int netcalc::generalizedCorrelation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCuArray.html">CuArray</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCuArray.html">CuArray</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCuArray.html">CuArray</a>&lt; int &gt; *&#160;</td>
+          <td class="paramname"><em>ab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>platform</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the generalized correlation between all pairs of random variables listed in 'ab'. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td>Mx(d*N) matrix of M d-dimensional random variables with N samples. </td></tr>
+    <tr><td class="paramname">R</td><td>Vector that stores the generalized correlation between pairs of random variables listed in 'ab'. </td></tr>
+    <tr><td class="paramname">ab</td><td>Vector of pairs of random variables for which generalized correlation is computed. </td></tr>
+    <tr><td class="paramname">k</td><td>K value used in generalized correlation calculation. </td></tr>
+    <tr><td class="paramname">n</td><td>Number of samples. </td></tr>
+    <tr><td class="paramname">xd</td><td>The dimension of the joint random variable. Only 2D-joint random variables are supported. </td></tr>
+    <tr><td class="paramname">d</td><td>The dimension of each random variable. Only 1, 2, and 3-dimensional random variables are supported. </td></tr>
+    <tr><td class="paramname">platform</td><td>Platform (CPU or GPU) used for computation. Use 0 for GPU, and 1 for CPU.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successful, 1 otherwise.</dd></dl>
+
+<details><p><summary><b>Python Example</b></summary>
+
+
+</p><div class="fragment"><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
+<div class="line"><span class="keyword">from</span> netcalc <span class="keyword">import</span> generalizedCorrelation, GPU_PLATFORM</div>
+<div class="line"><span class="keyword">from</span> cuarray <span class="keyword">import</span> FloatCuArray, IntCuArray</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Initialize the CuArrays for storing random variable data (X),</span></div>
+<div class="line"><span class="stringliteral">generalized correlation results (R), </span></div>
+<div class="line"><span class="stringliteral">and indices of random variables (ab).</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">X = FloatCuArray()</div>
+<div class="line">R = FloatCuArray()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">&#39;ab&#39; is a 2xN CuArray where each row represents a pair of indices referring to the rows in &#39;X&#39;.</span></div>
+<div class="line"><span class="stringliteral">These index pairs determine which pairs of random variables from &#39;X&#39; are used in each </span></div>
+<div class="line"><span class="stringliteral">generalized correlation calculation.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">ab = IntCuArray()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Define the parameters for the generalized correlation calculation.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Number of points in each random variable&quot;&quot;&quot;</span></div>
+<div class="line">n = 1000</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;k-nearest neighbors coefficient&quot;&quot;&quot;</span></div>
+<div class="line">k = 4</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Dimension of the joint random variable space&quot;&quot;&quot;</span></div>
+<div class="line">xd = 2</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Dimension of each random variable&quot;&quot;&quot;</span></div>
+<div class="line">d = 1</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Calculation platform (GPU or CPU)&quot;&quot;&quot;</span></div>
+<div class="line">platform = GPU_PLATFORM</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Create a dictionary of calculation parameters.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">params = dict(</div>
+<div class="line">    X=X,</div>
+<div class="line">    R=R,</div>
+<div class="line">    ab=ab,</div>
+<div class="line">    k=k,</div>
+<div class="line">    n=n,</div>
+<div class="line">    xd=xd,</div>
+<div class="line">    d=d,</div>
+<div class="line">    platform=platform,</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Define the input domain for generating random variables.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">domain = np.linspace(0, 2 * np.pi, 1000)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Initialize the random variable data in X:</span></div>
+<div class="line"><span class="stringliteral">- The first random variable is a sine function with added Gaussian noise.</span></div>
+<div class="line"><span class="stringliteral">- The second random variable is a cosine function with added Gaussian noise.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">X.init(2, 1000)</div>
+<div class="line"><span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(1000):</div>
+<div class="line">    X[0][i] = np.sin(domain[i]) + np.random.normal(0, 0.1)  <span class="comment"># Sine with noise</span></div>
+<div class="line">    X[1][i] = np.cos(domain[i]) + np.random.normal(0, 0.1)  <span class="comment"># Cosine with noise</span></div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Initialize the &#39;ab&#39; array with pairs of indices for mutual information calculation.</span></div>
+<div class="line"><span class="stringliteral">Each row, such as [0, 1], represents a pair of random variables in &#39;X&#39; to be analyzed.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">np_ab = np.array([[0, 0], [0, 1], [1, 0], [1, 1]]).astype(np.int32)</div>
+<div class="line">ab.fromNumpy2D(np_ab)</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Perform mutual information calculation and print results.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">generalizedCorrelation(**params)</div>
+<div class="line">print(R)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Calculate and print the Pearson correlation coefficient for the data in &#39;X&#39;.</span></div>
+<div class="line"><span class="stringliteral">The Pearson correlation is expected to be close to zero since the random variables</span></div>
+<div class="line"><span class="stringliteral">(sine and cosine functions with added noise) are orthogonal. This orthogonality</span></div>
+<div class="line"><span class="stringliteral">leads to a minimal linear correlation, which is what Pearson correlation measures.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">r = np.corrcoef(X.toNumpy2D())</div>
+<div class="line">print(r)</div>
+<div class="line"> </div>
+</div><!-- fragment -->
+</details>
+
+ 
+</div>
+</div>
 <a id="a5af0a49a6a96305d023b16dfe72e1fb8" name="a5af0a49a6a96305d023b16dfe72e1fb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5af0a49a6a96305d023b16dfe72e1fb8">&#9670;&#160;</a></span>generalizedCorrelation()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af0a49a6a96305d023b16dfe72e1fb8">&#9670;&#160;</a></span>generalizedCorrelation() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,12 +378,123 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>generalizedCorrelation
     <tr><td class="paramname">n</td><td>Number of samples. </td></tr>
     <tr><td class="paramname">xd</td><td>The dimension of the joint random variable. Only 2D-joint random variables are supported. </td></tr>
     <tr><td class="paramname">d</td><td>The dimension of each random variable. Only 1, 2, and 3-dimensional random variables are supported. </td></tr>
-    <tr><td class="paramname">platform</td><td>Platform (CPU or GPU) used for computation. Use 0 for GPU, and 1 for CPU.</td></tr>
+    <tr><td class="paramname">platform</td><td>Platform (CPU or GPU) used for computation. Use 0 for GPU, and 1 for CPU. </td></tr>
+    <tr><td class="paramname">checkpointFrequency</td><td>Frequency, in terms of per generalized correlation calculation, results are checkpointed. </td></tr>
+    <tr><td class="paramname">checkpointFileName</td><td>Name of NumPy binary (.npy) checkpointed results is saved to.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successful, 1 otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successful, 1 otherwise.</dd></dl>
 
+<details><p><summary><b>Python Example</b></summary>
+
+
+</p><div class="fragment"><div class="line"><span class="keyword">from</span> pathlib <span class="keyword">import</span> Path</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
+<div class="line"><span class="keyword">from</span> netcalc <span class="keyword">import</span> generalizedCorrelationWithCheckpointing, GPU_PLATFORM</div>
+<div class="line"><span class="keyword">from</span> cuarray <span class="keyword">import</span> FloatCuArray, IntCuArray</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Current working directory&quot;&quot;&quot;</span></div>
+<div class="line">cwd = Path.cwd()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Initialize the CuArrays for storing random variable data (X),</span></div>
+<div class="line"><span class="stringliteral">generalized correlation results (R), </span></div>
+<div class="line"><span class="stringliteral">and indices of random variables (ab).</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">X = FloatCuArray()</div>
+<div class="line">R = FloatCuArray()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">&#39;ab&#39; is a 2xN CuArray where each row represents a pair of indices referring to the rows in &#39;X&#39;.</span></div>
+<div class="line"><span class="stringliteral">These index pairs determine which pairs of random variables from &#39;X&#39; are used in each </span></div>
+<div class="line"><span class="stringliteral">generalized correlation calculation.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">ab = IntCuArray()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Define the parameters for the generalized correlation calculation.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Number of points in each random variable&quot;&quot;&quot;</span></div>
+<div class="line">n = 1000</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;k-nearest neighbors coefficient&quot;&quot;&quot;</span></div>
+<div class="line">k = 4</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Dimension of the joint random variable space&quot;&quot;&quot;</span></div>
+<div class="line">xd = 2</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Dimension of each random variable&quot;&quot;&quot;</span></div>
+<div class="line">d = 1</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Calculation platform (GPU or CPU)&quot;&quot;&quot;</span></div>
+<div class="line">platform = GPU_PLATFORM</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Save the results every generalized correlation calculation&quot;&quot;&quot;</span></div>
+<div class="line">checkpoint_frequency = 1</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Checkpoint file name&quot;&quot;&quot;</span></div>
+<div class="line">checkpoint_file_name = cwd / <span class="stringliteral">&quot;generalized_correlation_checkpoint.npy&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Create a dictionary of calculation parameters.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">params = dict(</div>
+<div class="line">    X=X,</div>
+<div class="line">    R=R,</div>
+<div class="line">    ab=ab,</div>
+<div class="line">    k=k,</div>
+<div class="line">    n=n,</div>
+<div class="line">    xd=xd,</div>
+<div class="line">    d=d,</div>
+<div class="line">    platform=platform,</div>
+<div class="line">    checkpointFrequency=checkpoint_frequency,</div>
+<div class="line">    checkpointFileName=str(checkpoint_file_name),</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Define the input domain for generating random variables.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">domain = np.linspace(0, 2 * np.pi, 1000)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Initialize the random variable data in X:</span></div>
+<div class="line"><span class="stringliteral">- The first random variable is a sine function with added Gaussian noise.</span></div>
+<div class="line"><span class="stringliteral">- The second random variable is a cosine function with added Gaussian noise.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">X.init(2, 1000)</div>
+<div class="line"><span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(1000):</div>
+<div class="line">    X[0][i] = np.sin(domain[i]) + np.random.normal(0, 0.1)  <span class="comment"># Sine with noise</span></div>
+<div class="line">    X[1][i] = np.cos(domain[i]) + np.random.normal(0, 0.1)  <span class="comment"># Cosine with noise</span></div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Initialize the &#39;ab&#39; array with pairs of indices for mutual information calculation.</span></div>
+<div class="line"><span class="stringliteral">Each row, such as [0, 1], represents a pair of random variables in &#39;X&#39; to be analyzed.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">np_ab = np.array([[0, 0], [0, 1], [1, 0], [1, 1]]).astype(np.int32)</div>
+<div class="line">ab.fromNumpy2D(np_ab)</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Perform mutual information calculation and print results.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">generalizedCorrelationWithCheckpointing(**params)</div>
+<div class="line">print(R)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Calculate and print the Pearson correlation coefficient for the data in &#39;X&#39;.</span></div>
+<div class="line"><span class="stringliteral">The Pearson correlation is expected to be close to zero since the random variables</span></div>
+<div class="line"><span class="stringliteral">(sine and cosine functions with added noise) are orthogonal. This orthogonality</span></div>
+<div class="line"><span class="stringliteral">leads to a minimal linear correlation, which is what Pearson correlation measures.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">r = np.corrcoef(X.toNumpy2D())</div>
+<div class="line">print(r)</div>
+<div class="line"> </div>
+</div><!-- fragment -->
+</details>
+
+ 
 </div>
 </div>
 <a id="acedcac0cffe4f5f00ef08b3cf7201caf" name="acedcac0cffe4f5f00ef08b3cf7201caf"></a>
@@ -462,8 +749,101 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>generalizedCorrelation
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successful, 1 otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successful, 1 otherwise.</dd></dl>
 
+<details><p><summary><b>Python Example</b></summary>
+
+
+</p><div class="fragment"><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
+<div class="line"><span class="keyword">from</span> netcalc <span class="keyword">import</span> mutualInformation, GPU_PLATFORM</div>
+<div class="line"><span class="keyword">from</span> cuarray <span class="keyword">import</span> FloatCuArray, IntCuArray</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Initialize the CuArrays for storing random variable data (X), mutual information results (I), </span></div>
+<div class="line"><span class="stringliteral">and indices of random variables (ab).</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">X = FloatCuArray()</div>
+<div class="line">I = FloatCuArray()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">&#39;ab&#39; is a 2xN CuArray where each row represents a pair of indices referring to the rows in &#39;X&#39;.</span></div>
+<div class="line"><span class="stringliteral">These index pairs determine which pairs of random variables from &#39;X&#39; are used in each mutual information calculation.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">ab = IntCuArray()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Define the parameters for the mutual information calculation.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Number of points in each random variable&quot;&quot;&quot;</span></div>
+<div class="line">n = 1000</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;k-nearest neighbors coefficient&quot;&quot;&quot;</span></div>
+<div class="line">k = 4</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Dimension of the joint random variable space&quot;&quot;&quot;</span></div>
+<div class="line">xd = 2</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Dimension of each random variable&quot;&quot;&quot;</span></div>
+<div class="line">d = 1</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Calculation platform (GPU or CPU)&quot;&quot;&quot;</span></div>
+<div class="line">platform = GPU_PLATFORM</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Create a dictionary of calculation parameters </span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">params = dict(</div>
+<div class="line">    X=X,</div>
+<div class="line">    I=I,</div>
+<div class="line">    ab=ab,</div>
+<div class="line">    k=k,</div>
+<div class="line">    n=n,</div>
+<div class="line">    xd=xd,</div>
+<div class="line">    d=d,</div>
+<div class="line">    platform=platform,</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Define the input domain for generating random variables.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">domain = np.linspace(0, 2 * np.pi, 1000)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Initialize the random variable data in X:</span></div>
+<div class="line"><span class="stringliteral">- The first random variable is a sine function with added Gaussian noise.</span></div>
+<div class="line"><span class="stringliteral">- The second random variable is a cosine function with added Gaussian noise.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">X.init(2, 1000)</div>
+<div class="line"><span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(1000):</div>
+<div class="line">    X[0][i] = np.sin(domain[i]) + np.random.normal(0, 0.1)  <span class="comment"># Sine with noise</span></div>
+<div class="line">    X[1][i] = np.cos(domain[i]) + np.random.normal(0, 0.1)  <span class="comment"># Cosine with noise</span></div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Initialize the &#39;ab&#39; array with pairs of indices for mutual information calculation.</span></div>
+<div class="line"><span class="stringliteral">Each row, such as [0, 1], represents a pair of random variables in &#39;X&#39; to be analyzed.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">np_ab = np.array([[0, 0], [0, 1], [1, 0], [1, 1]]).astype(np.int32)</div>
+<div class="line">ab.fromNumpy2D(np_ab)</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Perform mutual information calculation and print results.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">mutualInformation(**params)</div>
+<div class="line">print(I)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Calculate and print the Pearson correlation coefficient for the data in &#39;X&#39;.</span></div>
+<div class="line"><span class="stringliteral">The Pearson correlation is expected to be close to zero since the random variables</span></div>
+<div class="line"><span class="stringliteral">(sine and cosine functions with added noise) are orthogonal. This orthogonality</span></div>
+<div class="line"><span class="stringliteral">leads to a minimal linear correlation, which is what Pearson correlation measures.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">r = np.corrcoef(X.toNumpy2D())</div>
+<div class="line">print(r)</div>
+</div><!-- fragment -->
+</details>
+
+ 
 </div>
 </div>
 <a id="abf7c2ad9ab2ecb9f0c76d62b334c0418" name="abf7c2ad9ab2ecb9f0c76d62b334c0418"></a>
@@ -556,8 +936,117 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>generalizedCorrelation
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if successful, 1 otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successful, 1 otherwise.</dd></dl>
 
+<details><p><summary><b>Python Example</b></summary>
+
+
+</p><div class="fragment"><div class="line"><span class="keyword">from</span> pathlib <span class="keyword">import</span> Path</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
+<div class="line"><span class="keyword">from</span> netcalc <span class="keyword">import</span> mutualInformationWithCheckpointing, GPU_PLATFORM</div>
+<div class="line"><span class="keyword">from</span> cuarray <span class="keyword">import</span> FloatCuArray, IntCuArray</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Current working directory&quot;&quot;&quot;</span></div>
+<div class="line">cwd = Path.cwd()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Initialize the CuArrays for storing random variable data (X),</span></div>
+<div class="line"><span class="stringliteral">mutual information results (I), </span></div>
+<div class="line"><span class="stringliteral">and indices of random variables (ab).</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">X = FloatCuArray()</div>
+<div class="line">I = FloatCuArray()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">&#39;ab&#39; is a 2xN CuArray where each row represents a pair of indices referring to the rows in &#39;X&#39;.</span></div>
+<div class="line"><span class="stringliteral">These index pairs determine which pairs of random variables from &#39;X&#39; are used in each </span></div>
+<div class="line"><span class="stringliteral">mutual information calculation.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">ab = IntCuArray()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Define the parameters for the mutual information calculation.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Number of points in each random variable&quot;&quot;&quot;</span></div>
+<div class="line">n = 1000</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;k-nearest neighbors coefficient&quot;&quot;&quot;</span></div>
+<div class="line">k = 4</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Dimension of the joint random variable space&quot;&quot;&quot;</span></div>
+<div class="line">xd = 2</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Dimension of each random variable&quot;&quot;&quot;</span></div>
+<div class="line">d = 1</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Calculation platform (GPU or CPU)&quot;&quot;&quot;</span></div>
+<div class="line">platform = GPU_PLATFORM</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Save the results every mutual information calculation&quot;&quot;&quot;</span></div>
+<div class="line">checkpoint_frequency = 1</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;Checkpoint file name&quot;&quot;&quot;</span></div>
+<div class="line">checkpoint_file_name = cwd / <span class="stringliteral">&quot;mutual_information_checkpoint.npy&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Create a dictionary of calculation parameters.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">params = dict(</div>
+<div class="line">    X=X,</div>
+<div class="line">    I=I,</div>
+<div class="line">    ab=ab,</div>
+<div class="line">    k=k,</div>
+<div class="line">    n=n,</div>
+<div class="line">    xd=xd,</div>
+<div class="line">    d=d,</div>
+<div class="line">    platform=platform,</div>
+<div class="line">    checkpointFrequency=checkpoint_frequency,</div>
+<div class="line">    checkpointFileName=str(checkpoint_file_name),</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Define the input domain for generating random variables.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">domain = np.linspace(0, 2 * np.pi, 1000)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Initialize the random variable data in X:</span></div>
+<div class="line"><span class="stringliteral">- The first random variable is a sine function with added Gaussian noise.</span></div>
+<div class="line"><span class="stringliteral">- The second random variable is a cosine function with added Gaussian noise.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">X.init(2, 1000)</div>
+<div class="line"><span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(1000):</div>
+<div class="line">    X[0][i] = np.sin(domain[i]) + np.random.normal(0, 0.1)  <span class="comment"># Sine with noise</span></div>
+<div class="line">    X[1][i] = np.cos(domain[i]) + np.random.normal(0, 0.1)  <span class="comment"># Cosine with noise</span></div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Initialize the &#39;ab&#39; array with pairs of indices for mutual information calculation.</span></div>
+<div class="line"><span class="stringliteral">Each row, such as [0, 1], represents a pair of random variables in &#39;X&#39; to be analyzed.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">np_ab = np.array([[0, 0], [0, 1], [1, 0], [1, 1]]).astype(np.int32)</div>
+<div class="line">ab.fromNumpy2D(np_ab)</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Perform mutual information calculation and print results.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">mutualInformationWithCheckpointing(**params)</div>
+<div class="line">print(I)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Calculate and print the Pearson correlation coefficient for the data in &#39;X&#39;.</span></div>
+<div class="line"><span class="stringliteral">The Pearson correlation is expected to be close to zero since the random variables</span></div>
+<div class="line"><span class="stringliteral">(sine and cosine functions with added noise) are orthogonal. This orthogonality</span></div>
+<div class="line"><span class="stringliteral">leads to a minimal linear correlation, which is what Pearson correlation measures.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">r = np.corrcoef(X.toNumpy2D())</div>
+<div class="line">print(r)</div>
+<div class="line"> </div>
+</div><!-- fragment -->
+</details>
+
+ 
 </div>
 </div>
 <a id="a66a1db36caea5b2ffe4bdda5cdece734" name="a66a1db36caea5b2ffe4bdda5cdece734"></a>
