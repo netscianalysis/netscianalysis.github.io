@@ -247,10 +247,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 </div><div class="memdoc">
 
 <p>Constructs an empty <a class="el" href="classCuArray.html" title="Manages CUDA-supported arrays, offering initialization, memory management, and data manipulation....">CuArray</a> object. </p>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;cuarray.h&quot;</span></div>
 <div class="line"> </div>
@@ -270,13 +267,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">}</div>
 <div class="ttc" id="aclassCuArray_html"><div class="ttname"><a href="classCuArray.html">CuArray</a></div><div class="ttdoc">Manages CUDA-supported arrays, offering initialization, memory management, and data manipulation....</div><div class="ttdef"><b>Definition</b> cuarray.h:24</div></div>
 <div class="ttc" id="aclassCuArray_html_a71b18427207e04672055e846fc66e8ad"><div class="ttname"><a href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">CuArray::set</a></div><div class="ttdeci">CuArrayError set(T value, int i, int j)</div><div class="ttdoc">Sets a value at a specified position in the CuArray.</div></div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p><b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><span class="stringliteral">Always precede CuArray with the data type</span></div>
 <div class="line"><span class="stringliteral">Here we are importing CuArray int and float templates.</span></div>
@@ -290,10 +281,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;Create a new int CuArray instance&quot;&quot;&quot;</span></div>
 <div class="line">int_cuarray = IntCuArray()</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -316,10 +304,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Checks if memory is allocated for the device data. </p>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating success or failure of the operation.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div>
@@ -358,10 +343,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a82a35817b8d3132dec7c3589e10a8ffc" name="a82a35817b8d3132dec7c3589e10a8ffc"></a>
@@ -383,10 +365,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Allocates memory for the device data. </p>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating success or failure of the operation.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -430,10 +409,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a21cfc63fa998e6e086b3d8d0edda2afa" name="a21cfc63fa998e6e086b3d8d0edda2afa"></a>
@@ -455,10 +431,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Checks if memory is allocated for the host data. </p>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating success or failure of the operation.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -491,10 +464,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a55d0755cfc90e9cff471ec32dea86c44" name="a55d0755cfc90e9cff471ec32dea86c44"></a>
@@ -516,10 +486,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Allocates memory for the host data. </p>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating success or failure of the operation.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -581,10 +548,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ac5d447ffe3a15527a8e0b38cb4a5633c" name="ac5d447ffe3a15527a8e0b38cb4a5633c"></a>
@@ -613,10 +577,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to a new <a class="el" href="classCuArray.html" title="Manages CUDA-supported arrays, offering initialization, memory management, and data manipulation....">CuArray</a> with sorted indices.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -677,13 +638,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">sortedIndicesCuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p> <b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
@@ -729,10 +684,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">        sorted_cuarray[0][_],</div>
 <div class="line">        float_cuarray[7][sort_idx]</div>
 <div class="line">    )</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="afaeb48279ae2d704c2a62bb9cfdccfd6" name="afaeb48279ae2d704c2a62bb9cfdccfd6"></a>
@@ -755,10 +707,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <p>Returns the total size in bytes of the <a class="el" href="classCuArray.html" title="Manages CUDA-supported arrays, offering initialization, memory management, and data manipulation....">CuArray</a> data. </p>
 <p>Includes both the host and device memory.</p>
 <dl class="section return"><dt>Returns</dt><dd>Size in bytes.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -792,17 +741,8 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
-</p><div class="fragment"></div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --><p><b>Python Example</b><br  />
+</p><div class="fragment"></div><!-- fragment --> 
 </div>
 </div>
 <a id="a6d0db99b54cd1b5285cba0d2c3adbadf" name="a6d0db99b54cd1b5285cba0d2c3adbadf"></a>
@@ -824,14 +764,8 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Deallocates memory for the device data. </p>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating success or failure of the operation.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
-</p><div class="fragment"></div><!-- fragment -->
-</details>
-
- 
+<p><b>C++ Example</b><br  />
+</p><div class="fragment"></div><!-- fragment --> 
 </div>
 </div>
 <a id="abc6379f66d78b190d7648984aa1f8208" name="abc6379f66d78b190d7648984aa1f8208"></a>
@@ -853,10 +787,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Deallocates memory for the host data. </p>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating success or failure of the operation.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div>
 <div class="line"> </div>
@@ -904,10 +835,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a86e3f0f25942fb47f5a7d6707b837fe0" name="a86e3f0f25942fb47f5a7d6707b837fe0"></a>
@@ -929,10 +857,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Returns a reference to the device data. </p>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the device data.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -971,10 +896,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a9995287a78c10440888993ff63bac26a" name="a9995287a78c10440888993ff63bac26a"></a>
@@ -1035,10 +957,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating the operation's success or failure.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -1111,13 +1030,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassCuArray_html_a957ec355b0e625c79a1e2521e72c7505"><div class="ttname"><a href="classCuArray.html#a957ec355b0e625c79a1e2521e72c7505">CuArray::init</a></div><div class="ttdeci">CuArrayError init(int m, int n)</div><div class="ttdoc">Initializes CuArray with specified dimensions and allocates memory on host and device.</div></div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p> <b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><span class="stringliteral">Always precede CuArray with the data type</span></div>
 <div class="line"><span class="stringliteral">Here we are importing float templates.</span></div>
@@ -1151,10 +1064,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"><span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(float_cuarray1.m()):</div>
 <div class="line">    <span class="keywordflow">for</span> j <span class="keywordflow">in</span> range(float_cuarray1.n()):</div>
 <div class="line">        print(float_cuarray1[i][j], float_cuarray2[i][j])</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a88e32086fbc097d3dfe44d45f0a0c0fb" name="a88e32086fbc097d3dfe44d45f0a0c0fb"></a>
@@ -1215,10 +1125,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating the operation's success or failure.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -1290,10 +1197,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="aa697612bb5357a303488bbaa30fbb6c0" name="aa697612bb5357a303488bbaa30fbb6c0"></a>
@@ -1333,10 +1237,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating success or failure of the operation.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div>
@@ -1382,13 +1283,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span>[] <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">NUMPY_ARRAY</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p><b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
@@ -1415,10 +1310,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;Print the CuArray and numpy array to compare.&quot;&quot;&quot;</span></div>
 <div class="line"><span class="keywordflow">for</span> _ <span class="keywordflow">in</span> range(10):</div>
 <div class="line">    print(float_cuarray[0][_], np_array[_])</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a5da385dcc1085a97f63c076a4766719c" name="a5da385dcc1085a97f63c076a4766719c"></a>
@@ -1465,10 +1357,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating success or failure of the operation.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -1521,13 +1410,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span>[] <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">NUMPY_ARRAY</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p><b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><span class="stringliteral">Always precede CuArray with the data type</span></div>
@@ -1553,10 +1436,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"><span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(10):</div>
 <div class="line">    <span class="keywordflow">for</span> j <span class="keywordflow">in</span> range(10):</div>
 <div class="line">        print(float_cuarray[i][j], np_array[i][j])</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a3d27d87ef7eac1d2a41189269b1f395d" name="a3d27d87ef7eac1d2a41189269b1f395d"></a>
@@ -1596,10 +1476,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value at the specified position.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;cuarray.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div>
@@ -1648,13 +1525,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">}</div>
 <div class="ttc" id="aclassCuArray_html_a01c033f0b7aa7eb1bd3cd8ae41aff34b"><div class="ttname"><a href="classCuArray.html#a01c033f0b7aa7eb1bd3cd8ae41aff34b">CuArray::m</a></div><div class="ttdeci">int m() const</div><div class="ttdoc">Returns the number of rows in the CuArray.</div></div>
 <div class="ttc" id="aclassCuArray_html_a627a30e518feb0ed761c00ac1fbb1234"><div class="ttname"><a href="classCuArray.html#a627a30e518feb0ed761c00ac1fbb1234">CuArray::n</a></div><div class="ttdeci">int n() const</div><div class="ttdoc">Returns the number of columns in the CuArray.</div></div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p> <b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
@@ -1681,10 +1552,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;Print the array&quot;&quot;&quot;</span></div>
 <div class="line">print(float_cuarray)</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a89c635ae8788e21d9a13c5f3ec54d91a" name="a89c635ae8788e21d9a13c5f3ec54d91a"></a>
@@ -1706,10 +1574,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Returns a reference to the host data. </p>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the host data.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -1749,10 +1614,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a957ec355b0e625c79a1e2521e72c7505" name="a957ec355b0e625c79a1e2521e72c7505"></a>
@@ -1792,10 +1654,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating operation success or failure.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;cuarray.h&quot;</span></div>
 <div class="line"> </div>
@@ -1829,13 +1688,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p> <b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><span class="stringliteral">Always precede CuArray with the data type</span></div>
 <div class="line"><span class="stringliteral">Here we are importing float templates.</span></div>
@@ -1855,10 +1708,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"><span class="stringliteral">which has a __repr__ method implemented in the SWIG interface</span></div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line">print(float_cuarray)</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a4e3d6d9a9db4bf31b40b74f3e44fd8e2" name="a4e3d6d9a9db4bf31b40b74f3e44fd8e2"></a>
@@ -1905,10 +1755,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating operation success or failure.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;cuarray.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -1959,10 +1806,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="aadcc3c0d018f54cc13bd3fcf7366beaf" name="aadcc3c0d018f54cc13bd3fcf7366beaf"></a>
@@ -1991,10 +1835,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating success or failure of the operation.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;cuarray.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div>
@@ -2034,13 +1875,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p> <b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
@@ -2076,10 +1911,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"><span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(10):</div>
 <div class="line">    <span class="keywordflow">for</span> j <span class="keywordflow">in</span> range(10):</div>
 <div class="line">        print(float_cuarray[i][j], numpy_array[i, j])</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a01c033f0b7aa7eb1bd3cd8ae41aff34b" name="a01c033f0b7aa7eb1bd3cd8ae41aff34b"></a>
@@ -2101,10 +1933,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Returns the number of rows in the <a class="el" href="classCuArray.html" title="Manages CUDA-supported arrays, offering initialization, memory management, and data manipulation....">CuArray</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of rows.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -2138,13 +1967,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p><b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><span class="stringliteral">Always precede CuArray with the data type</span></div>
@@ -2163,10 +1986,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;Print the number of rows in the CuArray&quot;&quot;&quot;</span></div>
 <div class="line">print(float_cuarray.m())</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a627a30e518feb0ed761c00ac1fbb1234" name="a627a30e518feb0ed761c00ac1fbb1234"></a>
@@ -2188,10 +2008,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Returns the number of columns in the <a class="el" href="classCuArray.html" title="Manages CUDA-supported arrays, offering initialization, memory management, and data manipulation....">CuArray</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of columns.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -2225,13 +2042,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p><b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><span class="stringliteral">Always precede CuArray with the data type</span></div>
 <div class="line"><span class="stringliteral">Here we are importing the float template.</span></div>
@@ -2248,10 +2059,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;Print the number of columns in the CuArray&quot;&quot;&quot;</span></div>
 <div class="line">print(float_cuarray.n())</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ad714c1352ff07ce946462a84565ab3c7" name="ad714c1352ff07ce946462a84565ab3c7"></a>
@@ -2280,10 +2088,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the element at the specified index.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -2325,13 +2130,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p> <b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
@@ -2360,10 +2159,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;Print the 5th element of the 8th row&quot;&quot;&quot;</span></div>
 <div class="line">print(float_cuarray[7][4])</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a8e3809e3200f25132fa7be706a58785f" name="a8e3809e3200f25132fa7be706a58785f"></a>
@@ -2385,10 +2181,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Returns the owner status of the <a class="el" href="classCuArray.html" title="Manages CUDA-supported arrays, offering initialization, memory management, and data manipulation....">CuArray</a>. Indicates whether the <a class="el" href="classCuArray.html" title="Manages CUDA-supported arrays, offering initialization, memory management, and data manipulation....">CuArray</a> is responsible for memory deallocation. </p>
 <dl class="section return"><dt>Returns</dt><dd>Owner status of the <a class="el" href="classCuArray.html" title="Manages CUDA-supported arrays, offering initialization, memory management, and data manipulation....">CuArray</a>.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -2480,10 +2273,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a7533332268d8534fd6ee515aa2397353" name="a7533332268d8534fd6ee515aa2397353"></a>
@@ -2511,10 +2301,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </table>
   </dd>
 </dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;cuarray.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -2585,13 +2372,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p> <b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
@@ -2626,10 +2407,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"><span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(10):</div>
 <div class="line">    <span class="keywordflow">for</span> j <span class="keywordflow">in</span> range(10):</div>
 <div class="line">        print(float_cuarray[i][j], numpy_array[i, j])</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a71b18427207e04672055e846fc66e8ad" name="a71b18427207e04672055e846fc66e8ad"></a>
@@ -2676,10 +2454,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating success or failure of the operation.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;cuarray.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -2725,13 +2500,7 @@ template&lt;typename T &gt; </div>
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p> <b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
@@ -2763,10 +2532,7 @@ template&lt;typename T &gt; </div>
 <div class="line">        val = float_cuarray.get(i, j)</div>
 <div class="line">        print(<span class="stringliteral">&#39;{0:.{1}f}&#39;</span>.format(val, 5), end=<span class="stringliteral">&quot; &quot;</span>)</div>
 <div class="line">    print()</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="abf9992881a1c7c7dffa7268e63d7d126" name="abf9992881a1c7c7dffa7268e63d7d126"></a>
@@ -2788,10 +2554,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Returns the total number of elements in the <a class="el" href="classCuArray.html" title="Manages CUDA-supported arrays, offering initialization, memory management, and data manipulation....">CuArray</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>Total number of elements (rows multiplied by columns).</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -2826,13 +2589,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassCuArray_html_abf9992881a1c7c7dffa7268e63d7d126"><div class="ttname"><a href="classCuArray.html#abf9992881a1c7c7dffa7268e63d7d126">CuArray::size</a></div><div class="ttdeci">int size() const</div><div class="ttdoc">Returns the total number of elements in the CuArray.</div></div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p><b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><span class="stringliteral">Always precede CuArray with the data type</span></div>
 <div class="line"><span class="stringliteral">Here we are importing the float template.</span></div>
@@ -2849,10 +2606,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;Print the total number of values in the CuArray&quot;&quot;&quot;</span></div>
 <div class="line">print(float_cuarray.size())</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ab8c506751aa63553e978ca283418003b" name="ab8c506751aa63553e978ca283418003b"></a>
@@ -2881,10 +2635,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to a new <a class="el" href="classCuArray.html" title="Manages CUDA-supported arrays, offering initialization, memory management, and data manipulation....">CuArray</a> with sorted data.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -2928,13 +2679,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">sortedCuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p> <b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
@@ -2971,10 +2716,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line">print(sorted_cuarray)</div>
 <div class="line">print(float_cuarray[7])</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a5749d20ca3104e424481efee77255ebc" name="a5749d20ca3104e424481efee77255ebc"></a>
@@ -2996,10 +2738,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Copies data from the host to the device. </p>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating success or failure of the operation.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -3035,10 +2774,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a23b9d88cbb207af4874790819ca978d2" name="a23b9d88cbb207af4874790819ca978d2"></a>
@@ -3060,10 +2796,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 
 <p>Copies data from the device to the host. </p>
 <dl class="section return"><dt>Returns</dt><dd>CuArrayError indicating success or failure of the operation.</dd></dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cuarray.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
@@ -3114,10 +2847,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span> <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cuArray</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a9bbd3733a640e16a5d104ff343b711dc" name="a9bbd3733a640e16a5d104ff343b711dc"></a>
@@ -3156,10 +2886,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </table>
   </dd>
 </dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;cuarray.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div>
@@ -3221,17 +2948,8 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span>[] <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cols</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
-</p><div class="fragment"></div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --><p><b>Python Example</b><br  />
+</p><div class="fragment"></div><!-- fragment --> 
 </div>
 </div>
 <a id="a096b01813dd69acd62085ca234b83520" name="a096b01813dd69acd62085ca234b83520"></a>
@@ -3277,10 +2995,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
   </table>
   </dd>
 </dl>
-
-<details><p><summary><b>C++ Example</b></summary>
-
-
+<p><b>C++ Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;cuarray.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div>
@@ -3351,13 +3066,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">    <span class="keyword">delete</span>[] <a class="code hl_function" href="classCuArray.html#a71b18427207e04672055e846fc66e8ad">cols</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</details>
-
-
-<details><p><summary><b>Python Example</b></summary>
-
-
+</div><!-- fragment --><p><b>Python Example</b><br  />
 </p><div class="fragment"><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"> </div>
 <div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
@@ -3391,10 +3100,7 @@ template&lt;<a class="el" href="classCuArray.html#a71b18427207e04672055e846fc66e
 <div class="line">            np_array1[i][j],</div>
 <div class="line">            np_array2[i][j]</div>
 <div class="line">        )</div>
-</div><!-- fragment -->
-</details>
-
- 
+</div><!-- fragment --> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
