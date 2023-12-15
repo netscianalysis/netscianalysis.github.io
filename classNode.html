@@ -266,7 +266,57 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Network</b></td></tr
 <details><p><summary><b>Python Example</b></summary>
 
 
-</p><div class="fragment"></div><!-- fragment -->
+</p><div class="fragment"><div class="line"><span class="keyword">from</span> netchem <span class="keyword">import</span> Network, data_files</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">1000 frame Molecular Dynamics trajectory of a pyrophosphatase system.</span></div>
+<div class="line"><span class="stringliteral">The dcd is a binary coordinate file, and the pdb is a single frame </span></div>
+<div class="line"><span class="stringliteral">topology file.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">dcd, pdb = data_files(<span class="stringliteral">&#39;pyro&#39;</span>)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Construct a network using the entire trajectory.</span></div>
+<div class="line"><span class="stringliteral">If you want to use only a subset of the trajectory, you can specify</span></div>
+<div class="line"><span class="stringliteral">the first frame, last frame, and stride.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">network = <a class="code hl_class" href="classNetwork.html">Network</a>()</div>
+<div class="line">network.init(</div>
+<div class="line">    trajectoryFile=str(dcd), <span class="comment"># Convert the dcd Path object to a string</span></div>
+<div class="line">    topologyFile=str(pdb), <span class="comment"># Convert the pdb Path object to a string</span></div>
+<div class="line">    firstFrame=0,</div>
+<div class="line">    lastFrame=999,</div>
+<div class="line">    stride=1</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">For this example, we will use the first node in the network.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">node = network.nodes()[0]</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">To get a vector of all Atom objects in the node, use the atoms() method.</span></div>
+<div class="line"><span class="stringliteral">Unlike the atoms method in the Network class, this method returns a vector</span></div>
+<div class="line"><span class="stringliteral">of Atom objects instead of an Atoms object. This is for memory efficiency.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">atoms = node.atoms()</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">The Atom object vector is iterable, indexable, and can be converted </span></div>
+<div class="line"><span class="stringliteral">to a built-in Python list/tuple using the explicit list and tuple constructors.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">atoms_list = list(atoms)</div>
+<div class="line">atoms_tuple = tuple(atoms)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Iterate over all atoms in the node and print their information. </span></div>
+<div class="line"><span class="stringliteral">For more information on the Atom class, see the Atom class documentation.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="keywordflow">for</span> atom <span class="keywordflow">in</span> atoms:</div>
+<div class="line">    print(atom)</div>
+<div class="line">    print(<span class="stringliteral">&quot;-&quot;</span> * 80)</div>
+<div class="ttc" id="aclassNetwork_html"><div class="ttname"><a href="classNetwork.html">Network</a></div><div class="ttdef"><b>Definition</b> network.h:12</div></div>
+</div><!-- fragment -->
 </details>
 
  
@@ -315,7 +365,40 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Network</b></td></tr
 <details><p><summary><b>Python Example</b></summary>
 
 
-</p><div class="fragment"></div><!-- fragment -->
+</p><div class="fragment"><div class="line"><span class="keyword">from</span> netchem <span class="keyword">import</span> Network, data_files</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">1000 frame Molecular Dynamics trajectory of a pyrophosphatase system.</span></div>
+<div class="line"><span class="stringliteral">The dcd is a binary coordinate file, and the pdb is a single frame </span></div>
+<div class="line"><span class="stringliteral">topology file.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">dcd, pdb = data_files(<span class="stringliteral">&#39;pyro&#39;</span>)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Construct a network using the entire trajectory.</span></div>
+<div class="line"><span class="stringliteral">If you want to use only a subset of the trajectory, you can specify</span></div>
+<div class="line"><span class="stringliteral">the first frame, last frame, and stride.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">network = <a class="code hl_class" href="classNetwork.html">Network</a>()</div>
+<div class="line">network.init(</div>
+<div class="line">    trajectoryFile=str(dcd), <span class="comment"># Convert the dcd Path object to a string</span></div>
+<div class="line">    topologyFile=str(pdb), <span class="comment"># Convert the pdb Path object to a string</span></div>
+<div class="line">    firstFrame=0,</div>
+<div class="line">    lastFrame=999,</div>
+<div class="line">    stride=1</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">For this example, we will use the first node in the network.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">node = network.nodes()[0]</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Use the Node index method to get the index of the node.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">node_index = node.index()</div>
+<div class="line">print(node_index)</div>
+</div><!-- fragment -->
 </details>
 
  
@@ -343,7 +426,40 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Network</b></td></tr
 <details><p><summary><b>Python Example</b></summary>
 
 
-</p><div class="fragment"></div><!-- fragment -->
+</p><div class="fragment"><div class="line"><span class="keyword">from</span> netchem <span class="keyword">import</span> Network, data_files</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">1000 frame Molecular Dynamics trajectory of a pyrophosphatase system.</span></div>
+<div class="line"><span class="stringliteral">The dcd is a binary coordinate file, and the pdb is a single frame </span></div>
+<div class="line"><span class="stringliteral">topology file.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">dcd, pdb = data_files(<span class="stringliteral">&#39;pyro&#39;</span>)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Construct a network using the entire trajectory.</span></div>
+<div class="line"><span class="stringliteral">If you want to use only a subset of the trajectory, you can specify</span></div>
+<div class="line"><span class="stringliteral">the first frame, last frame, and stride.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">network = <a class="code hl_class" href="classNetwork.html">Network</a>()</div>
+<div class="line">network.init(</div>
+<div class="line">    trajectoryFile=str(dcd), <span class="comment"># Convert the dcd Path object to a string</span></div>
+<div class="line">    topologyFile=str(pdb), <span class="comment"># Convert the pdb Path object to a string</span></div>
+<div class="line">    firstFrame=0,</div>
+<div class="line">    lastFrame=999,</div>
+<div class="line">    stride=1</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">For this example, we will use the first node in the network.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">node = network.nodes()[0]</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Use the Node numAtoms method to get the number of atoms in the node.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">num_atoms = node.numAtoms()</div>
+<div class="line">print(num_atoms)</div>
+</div><!-- fragment -->
 </details>
 
  
@@ -371,7 +487,43 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Network</b></td></tr
 <details><p><summary><b>Python Example</b></summary>
 
 
-</p><div class="fragment"></div><!-- fragment -->
+</p><div class="fragment"><div class="line"><span class="keyword">from</span> netchem <span class="keyword">import</span> Network, data_files</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">1000 frame Molecular Dynamics trajectory of a pyrophosphatase system.</span></div>
+<div class="line"><span class="stringliteral">The dcd is a binary coordinate file, and the pdb is a single frame </span></div>
+<div class="line"><span class="stringliteral">topology file.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">dcd, pdb = data_files(<span class="stringliteral">&#39;pyro&#39;</span>)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Construct a network using the entire trajectory.</span></div>
+<div class="line"><span class="stringliteral">If you want to use only a subset of the trajectory, you can specify</span></div>
+<div class="line"><span class="stringliteral">the first frame, last frame, and stride.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">network = <a class="code hl_class" href="classNetwork.html">Network</a>()</div>
+<div class="line">network.init(</div>
+<div class="line">    trajectoryFile=str(dcd), <span class="comment"># Convert the dcd Path object to a string</span></div>
+<div class="line">    topologyFile=str(pdb), <span class="comment"># Convert the pdb Path object to a string</span></div>
+<div class="line">    firstFrame=0,</div>
+<div class="line">    lastFrame=999,</div>
+<div class="line">    stride=1</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">For this example, we will use the first node in the network.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">node = network.nodes()[0]</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Use the Node tag method to get the key used to </span></div>
+<div class="line"><span class="stringliteral">identify Node atoms. By default, the tag is defined</span></div>
+<div class="line"><span class="stringliteral">as the concatenation of the residue name and residue</span></div>
+<div class="line"><span class="stringliteral">index, chain id, and fragment id an atom belongs to.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">node_tag = node.tag()</div>
+<div class="line">print(node_tag)</div>
+</div><!-- fragment -->
 </details>
 
  
@@ -399,7 +551,40 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Network</b></td></tr
 <details><p><summary><b>Python Example</b></summary>
 
 
-</p><div class="fragment"></div><!-- fragment -->
+</p><div class="fragment"><div class="line"><span class="keyword">from</span> netchem <span class="keyword">import</span> Network, data_files</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">1000 frame Molecular Dynamics trajectory of a pyrophosphatase system.</span></div>
+<div class="line"><span class="stringliteral">The dcd is a binary coordinate file, and the pdb is a single frame </span></div>
+<div class="line"><span class="stringliteral">topology file.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">dcd, pdb = data_files(<span class="stringliteral">&#39;pyro&#39;</span>)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Construct a network using the entire trajectory.</span></div>
+<div class="line"><span class="stringliteral">If you want to use only a subset of the trajectory, you can specify</span></div>
+<div class="line"><span class="stringliteral">the first frame, last frame, and stride.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">network = <a class="code hl_class" href="classNetwork.html">Network</a>()</div>
+<div class="line">network.init(</div>
+<div class="line">    trajectoryFile=str(dcd), <span class="comment"># Convert the dcd Path object to a string</span></div>
+<div class="line">    topologyFile=str(pdb), <span class="comment"># Convert the pdb Path object to a string</span></div>
+<div class="line">    firstFrame=0,</div>
+<div class="line">    lastFrame=999,</div>
+<div class="line">    stride=1</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">For this example, we will use the first node in the network.</span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">node = network.nodes()[0]</div>
+<div class="line"> </div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="stringliteral">Use the Node totalMass method to get the total mass of the node. </span></div>
+<div class="line"><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line">total_mass = node.totalMass()</div>
+<div class="line">print(total_mass)</div>
+</div><!-- fragment -->
 </details>
 
  
